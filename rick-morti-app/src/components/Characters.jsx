@@ -10,7 +10,16 @@ class Characters extends React.Component {
     render() {
         console.log(this.props)
         return(
-            <div>dsdssd</div>
+            <div>
+                {
+                this.props.characters.map((character)=>{
+                    return <>
+                        <h3>{character.name}</h3>
+                        <img src={character.image} alt="" />
+                    </>
+                })
+                }
+            </div>
         )
 
     }
