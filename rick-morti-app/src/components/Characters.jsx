@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { getCharacters } from "../store/actions";
-
+import {Link} from "react-router-dom"
 // useEffect solo se usa en componentes funcionales
 
 function Characters(props){
@@ -14,7 +14,9 @@ function Characters(props){
                 {
                 props.characters.map((character)=>{
                     return <React.Fragment key={character.id}>
+                        <Link to={"/character/" + character.id}>
                         <h3>{character.name}</h3>
+                        </Link>
                         <img src={character.image} alt="" />
                     </React.Fragment>
                 })

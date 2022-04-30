@@ -3,7 +3,7 @@ import './App.css';
 import Characters from  './components/Characters.jsx'
 import {Route, Switch} from 'react-router-dom';
 import Nav from './components/Nav';
-import { CharacterDetail } from './components/CharacterDetail';
+import CharacterDetail from './components/CharacterDetail';
 
 // crear carpeta store: actions y reducer
 // para implementar el parametro requiero un store 
