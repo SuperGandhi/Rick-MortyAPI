@@ -14,8 +14,8 @@ function Characters(props){
                 {
                 props.characters.map((character)=>{
                     return <React.Fragment key={character.id}>
-                        <Link to={"/character/" + character.id}>
                         <h3>{character.name}</h3>
+                        <Link to={"/character/" + character.id}>
                         </Link>
                         <img src={character.image} alt="" />
                     </React.Fragment>
